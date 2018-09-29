@@ -72,7 +72,16 @@ func (e *Error) Error() string {
 	}
 
 	if e.Err != nil {
-		return e.Err.Error()
+		msg := ""
+		if len(e.Message) > 0 {
+			msgs := make([]string, 0, len(e.Message))
+			for key, value := range e.Message {
+				msgs = append(msgs, fmt.Sprintf("%s: %s", key, value))
+			}
+			msg = fmt.Sprintf("[%s]", strings.Join(msgs, ", "))
+		}
+
+		return e.Err.Error() + msg
 	}
 
 	return ""
