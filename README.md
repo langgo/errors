@@ -13,3 +13,8 @@
 - 并发的时候，会有问题吗？应该不会因为是由内向外返回值
 - // TODO 下面的错误都是参数错误。这看起来挺好的。需要改进错误值类型，让下面错误更优雅一下。错误前缀？错误组？// err.Log() err.Log(log)
 - NewF("fmt", arg1, arg2) WrapF()
+
+https://go.googlesource.com/proposal/+/master/design/go2draft.md
+https://github.com/golang/exp/tree/master/errors
+
+错误码
