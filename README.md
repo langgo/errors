@@ -18,3 +18,5 @@ https://go.googlesource.com/proposal/+/master/design/go2draft.md
 https://github.com/golang/exp/tree/master/errors
 
 错误码
+
+- uber zap Named
