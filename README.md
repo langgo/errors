@@ -14,3 +14,13 @@
 - // TODO 下面的错误都是参数错误。这看起来挺好的。需要改进错误值类型，让下面错误更优雅一下。错误前缀？错误组？// err.Log() err.Log(log)
 - NewF("fmt", arg1, arg2) WrapF()
 - 跨系统的时候，在调试模式，需要记录错误链
+
+https://go.googlesource.com/proposal/+/master/design/go2draft.md
+https://github.com/golang/exp/tree/master/errors
+
+错误码
+
+- uber zap Named
+- uber NewDevelopment
+- uber NewProduction
+
