@@ -9,12 +9,21 @@ import (
 func TestNew(t *testing.T) {
 	{
 		err := a()
-		// fmt.Println(err)
+		fmt.Printf("==========================: %%s\n")
+		fmt.Printf("%s\n", err)
+
+		fmt.Printf("==========================: %%v\n")
+		fmt.Printf("%v\n", err)
+
+		fmt.Printf("==========================: %%+v\n")
 		fmt.Printf("%+v\n", err)
 
 		e := err.(*Error)
-		fmt.Println(e.isTip)
-		fmt.Println(e.tipMsg)
+		fmt.Printf("==========================: isTip\n")
+		fmt.Printf("%v\n", e.isTip)
+
+		fmt.Printf("==========================: tipMsg\n")
+		fmt.Printf("%v\n", e.tipMsg)
 	}
 }
 

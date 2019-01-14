@@ -14,7 +14,7 @@
 - // TODO 下面的错误都是参数错误。这看起来挺好的。需要改进错误值类型，让下面错误更优雅一下。错误前缀？错误组？// err.Log() err.Log(log)
 - NewF("fmt", arg1, arg2) WrapF()
 - 跨系统的时候，在调试模式，需要记录错误链
-
+- 日志选择性的打印错误值。debug打印所有路径；开发模型，打印全路径。生产环境，不打印路径。并且可以实时选择的开启某些用户的错误级别。
 https://go.googlesource.com/proposal/+/master/design/go2draft.md
 https://github.com/golang/exp/tree/master/errors
 
@@ -24,3 +24,4 @@ https://github.com/golang/exp/tree/master/errors
 - uber NewDevelopment
 - uber NewProduction
 
+https://juejin.im/post/5a7a9e0af265da4e914b46f1
